@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <title>Lab 1</title>
   <!-- DONE: Add a meta tag to properly set the viewport and initial scale -->
-  <meta name="viewport" content="width=600">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- DONE: Add a link to a normalize.css file, which should be in your vendor/styles/ directory -->
-  <link src="vendor/styles/normalize.css" type="text/css">
+  <link href="vendor/styles/normalize.css" rel="stylesheet">
 
   <!-- DONE: Link in the provided styles/icons.css file so that you can use icon fonts -->
-  <link src="vendor/styles/icons.css" type="text/css">
+  <link href="vendor/styles/icons.css" rel="stylesheet">
   <!-- DONE: Link in your SMACSS-appropriate CSS files: base, layout, and modules -->
-  <link src="vendor/styles/base.css" type="text/css">
-  <link src="vendor/styles/layout.css" type="text/css">
-  <link src="vendor/styles/modules.css" type="text/css">
+  <link href="vendor/styles/base.css" rel="stylesheet">
+  <link href="vendor/styles/layout.css" rel="stylesheet">
+  <link href="vendor/styles/modules.css" rel="stylesheet">
   <!-- COMMENT: Explain the ordering of the loading of the stylesheets -->
   <!-- PUT YOUR RESPONSE HERE -->
   <!-- The Normalize.css will establish the default styling on the application so will go first.
@@ -31,6 +31,7 @@ And lastly modules.css is where apply styling to specific elements such as class
     <!-- COMMENT: Read the CSS Tricks article on clearfix, and explain in your own words how they are used. -->
     <!-- https://css-tricks.com/snippets/css/clear-fix/ -->
     <!-- PUT YOUR RESPONSE HERE -->
+    <!-- It's a way to clear a specific style on a specific section of your CSS. -->
 
     <section class="heading-group-h1">
       <h1>
@@ -40,7 +41,7 @@ And lastly modules.css is where apply styling to specific elements such as class
     </section>
     <nav class="main-nav">
       <!-- TODO: Add a hamburger menu icon here, which will show/hide depending on screen width (desktop vs. mobile). -->
-
+      <div class="icon-menu"></div>
       <ul>
         <li class="tab" data-content="articles"><a href="#" class="icon-home"> Home</a></li>
         <li class="tab" data-content="about"><a href="#" class="icon-address-book"> About</a></li>
